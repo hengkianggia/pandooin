@@ -1,8 +1,35 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Albert_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import QueryProvider from "@/components/QueryProvider";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const albertsans = Albert_Sans({
+  subsets: ["latin"],
+  variable: "--albertsans",
+});
+
+const theSignature = localFont({
+  src: [
+    {
+      path: "../../public/font/Thesignature.ttf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-signature",
+});
+
+const unbounded = localFont({
+  src: [
+    {
+      path: "../../public/font/Unbounded.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-unbounded",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +43,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={(albertsans.className, theSignature.variable)}>
+        <QueryProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </QueryProvider>
+      </body>
     </html>
   );
 }
