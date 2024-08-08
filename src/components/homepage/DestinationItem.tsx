@@ -44,8 +44,8 @@ const DestinationItem = ({ direction = "ltr" }: DestinationItemProps) => {
             <p className="text-myDarkGreen leading-4 mt-2 order-1 md:order-2 md:line-clamp-4">
               Labuan Bajo is a tropical paradise nestled in the westernmost part
               of Flores Island, Indonesia. With its stunning landscapes,
-              crystal-clear waters, and vibrant marine life, it's a gateway to
-              explore the mesmerizing Komodo National Park.
+              crystal-clear waters, and vibrant marine life, it&apos;s a gateway
+              to explore the mesmerizing Komodo National Park.
             </p>
             <p className="text-myDarkGreen font-bold text-sm mt-2 order-2 md:order-1">
               Organized by Pandooin
