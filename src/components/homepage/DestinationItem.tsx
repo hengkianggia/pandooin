@@ -56,7 +56,7 @@ const DestinationItem = ({ direction = "ltr" }: DestinationItemProps) => {
         <Div flex between className="mt-2 items-end lg:mt-4">
           <Div column>
             <p className="text-sm text-myDarkGreen lg:text-base">Start from</p>
-            <p className="font-bold font-unbounded text-gray-300 leading-3 max-md:hidden">
+            <p className="font-bold font-unbounded line-through text-gray-300 leading-3 max-md:hidden">
               IDR 5,200,000
             </p>
             <p className="text-18 font-bold font-unbounded text-myDarkGreen lg:text-28">

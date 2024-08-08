@@ -3,6 +3,7 @@ import Wrapper from "../Wrapper";
 import Div from "../Div";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import DestinationItem from "./DestinationItem";
+import SmallDestinationItem from "./SmallDestinationItem";
 
 const Destinations = () => {
   return (
@@ -26,11 +27,39 @@ const Destinations = () => {
           </Div>
         </Div>
 
-        <Div column itemsCenter full className="gap-8 md:gap-12">
+        <Div column itemsCenter full className="gap-8 md:gap-16">
           <DestinationItem />
           <DestinationItem direction="rtl" />
           <DestinationItem />
           <DestinationItem direction="rtl" />
+        </Div>
+
+        <Div column full itemsCenter className="gap-8">
+          <Div
+            full
+            flex
+            itemsCenter
+            className="overflow-x-scroll gap-3 mt-10 scrollbar-none lg:gap-8"
+          >
+            <SmallDestinationItem />
+            <SmallDestinationItem />
+            <SmallDestinationItem />
+            <SmallDestinationItem />
+          </Div>
+
+          <Div>
+            <Div flex itemsCenter className="gap-3 group cursor-pointer">
+              <Div className="p-1 rounded-full border-2 border-myDarkGreen group-hover:border-myGold">
+                <Icon
+                  icon={"icon-park-outline:right"}
+                  className="text-myDarkGreen text-xl group-hover:text-myGold"
+                />
+              </Div>
+              <p className="uppercase font-semibold text-myDarkGreen group-hover:text-myGold">
+                explore more
+              </p>
+            </Div>
+          </Div>
         </Div>
       </Wrapper>
     </section>
