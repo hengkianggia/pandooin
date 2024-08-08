@@ -20,7 +20,9 @@ const config = {
     extend: {
       colors: {
         myGreen: "var(--myGreen)",
+        myDarkGreen: "var(--myDarkGreen)",
         myGold: "var(--myGold)",
+        myWhite: "var(--myWhite)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -75,12 +77,20 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        header: "url('/public/images/header-image.svg')",
+        header: "url('/public/images/header-image.png')",
       },
       fontFamily: {
         signature: ["var(--font-signature)"],
         albertsans: ["var(--albertsans)"],
         unbounded: ["var(--unbounded)"],
+      },
+      fontSize: {
+        22: "22px",
+        24: "24px",
+        32: "32px",
+        36: "36px",
+        54: "54px",
+        86: "86px",
       },
     },
   },

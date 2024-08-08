@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white shadow-lg sticky -top-10 z-50">
+    <nav className="w-full bg-myWhite shadow-lg sticky top-0 z-50">
       <Wrapper className="flex justify-between items-center p-4 md:px-8">
         <Div>
           <Link href={"/"}>
