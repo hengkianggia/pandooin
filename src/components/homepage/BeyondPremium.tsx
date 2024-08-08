@@ -69,7 +69,7 @@ const BeyondPremium = () => {
           relative
           column
           itemsCenter
-          className="mt-10 lg:flex-row lg:justify-center lg:max-w-[70%] lg:gap-3"
+          className="mt-10 lg:flex-row lg:justify-center lg:max-w-[75%] lg:gap-3"
         >
           <Image src={paint} alt="image" width={500} className="w-52 lg:w-96" />
 
@@ -80,7 +80,7 @@ const BeyondPremium = () => {
             itemsCenter
             className="text-center lg:text-start lg:items-start"
           >
-            <h1 className="text-22 font-bold text-myDarkGreen lg:text-36">
+            <h1 className="text-22 font-bold font-unbounded text-myDarkGreen lg:text-32">
               Discover Tailored Experiences
             </h1>
             <p className="text-sm max-w-[90%] md:max-w-[70%] lg:text-base lg:max-w-[90%]">

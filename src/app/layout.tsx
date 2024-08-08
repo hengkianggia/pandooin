@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Albert_Sans } from "next/font/google";
+import { Albert_Sans, Unbounded } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import QueryProvider from "@/components/QueryProvider";
@@ -8,7 +8,14 @@ import Footer from "@/components/Footer";
 
 const albertsans = Albert_Sans({
   subsets: ["latin"],
+  weight: ["400", "700"],
   variable: "--albertsans",
+});
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--unbounded",
 });
 
 const theSignature = localFont({
@@ -21,15 +28,15 @@ const theSignature = localFont({
   variable: "--font-signature",
 });
 
-const unbounded = localFont({
-  src: [
-    {
-      path: "../../public/font/Unbounded.ttf",
-      weight: "700",
-    },
-  ],
-  variable: "--font-unbounded",
-});
+// const unbounded = localFont({
+//   src: [
+//     {
+//       path: "../../public/font/Unbounded.ttf",
+//       weight: "700",
+//     },
+//   ],
+//   variable: "--font-unbounded",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -43,7 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={(albertsans.className, theSignature.variable)}>
+      <body
+        className={`${albertsans.variable} ${unbounded.variable} ${theSignature.variable}`}
+      >
         <QueryProvider>
           <Navbar />
           <main>{children}</main>

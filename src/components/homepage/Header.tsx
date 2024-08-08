@@ -19,7 +19,7 @@ const Header = () => {
           <h1 className="font-signature text-myGold text-86 lg:text-[128px]">
             Premium Travel
           </h1>
-          <h2 className="text-24 font-bold relative -top-14 text-white lg:text-54 lg:-top-20">
+          <h2 className="text-24 font-bold relative font-unbounded -top-14 text-white lg:text-54 lg:-top-20">
             Beyond Expectation
           </h2>
         </Div>

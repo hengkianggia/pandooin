@@ -8,12 +8,12 @@ import Wrapper from "../Wrapper";
 const Separator = () => {
   return (
     <Div full>
-      <Wrapper className="w-full grid place-items-center mb-16">
+      <Wrapper className="w-full grid place-items-center mb-10 lg:mb-16">
         <Image
           src={separator}
           width={800}
           alt="separator"
-          className="w-[70%]"
+          className="w-[90%] lg:w-[70%]"
         />
       </Wrapper>
     </Div>
