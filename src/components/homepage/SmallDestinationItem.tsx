@@ -2,18 +2,27 @@ import React from "react";
 import Div from "../Div";
 import Image from "next/image";
 
-import gamabr from "../../../public/images/header-image.svg";
-import { cn } from "@/lib/utils";
-import Button from "../Button";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { formatRupiah } from "@/lib/utils";
 
-const SmallDestinationItem = () => {
+const SmallDestinationItem = ({
+  itinerary_name,
+  partner_name,
+  image,
+  itinerary_variant_pub_price,
+}: {
+  itinerary_name: string;
+  partner_name: string;
+  image: string;
+  itinerary_variant_pub_price: string;
+}) => {
   return (
-    <Div className="min-w-60 space-y-4 pb-6">
-      <Div full>
+    <Div className="min-w-60 space-y-4 pb-6 lg:w-[24%]">
+      <Div full className="overflow-hidden">
         <Image
-          src={gamabr}
+          src={image}
           width={400}
+          height={400}
           alt="image"
           className="w-full aspect-square object-cover object-center"
         />
@@ -23,10 +32,10 @@ const SmallDestinationItem = () => {
         <Div column full className="text-myGreen">
           <p className="text-sm uppercase">7 DAYS 6 NIGHTS</p>
           <p className="font-bold font-unbounded line-clamp-2">
-            Paradise Gateway: Labuan Bajo Two Lines Title Example
+            {itinerary_name}
           </p>
           <p className="text-myDarkGreen font-bold text-sm lg:text-base">
-            Organized by Pandooin
+            Organized by {partner_name}
           </p>
         </Div>
 
@@ -34,7 +43,7 @@ const SmallDestinationItem = () => {
           <Div column>
             <p className="text-sm text-myDarkGreen ">Start from</p>
             <p className="font-bold font-unbounded text-myDarkGreen">
-              IDR 5,200,000
+              {formatRupiah(+itinerary_variant_pub_price)}
             </p>
           </Div>
 

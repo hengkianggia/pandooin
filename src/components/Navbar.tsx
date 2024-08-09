@@ -38,7 +38,7 @@ const Navbar = () => {
         isScrolled ? "bg-transparent" : "bg-myWhite shadow-lg"
       )}
     >
-      <Wrapper className="flex justify-between items-center p-4 md:px-8 lg:px-0 lg:py-6">
+      <Wrapper className="flex justify-between items-center p-4 md:px-8 lg:px-0 lg:py-5">
         <Div>
           <Link href={"/"}>
             <Image src={isScrolled ? logowhite : logo} width={134} alt="logo" />

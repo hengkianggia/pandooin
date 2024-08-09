@@ -34,6 +34,7 @@ const Header = () => {
         <Image
           src={background}
           fill
+          priority
           className="object-cover object-center"
           alt="image"
         />
