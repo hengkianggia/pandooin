@@ -29,9 +29,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --myGreen: hsl(180, 80%, 25%);
+    --myGreen: #0B7373;
     --myDarkGreen: #004040;
-    --myGold: hsl(40, 57%, 63%);
+    --myGold: #d6b66b;
     --myWhite: hsl(50, 19%, 97%);
   }
 

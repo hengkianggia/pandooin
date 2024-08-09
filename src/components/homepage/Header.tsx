@@ -5,15 +5,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <header
-      className="w-full relative h-[90vh] bg-gray-800 object-cover object-center px-2 flex flex-col items-center justify-center md:h-[70vh] md:px-20 lg:h-[90vh] max-h-[900px] lg:items-start"
-      style={{
-        backgroundImage: "url(../../../public//images/header-image.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <header className="w-full relative h-screen bg-gray-800 object-cover object-center px-2 flex flex-col items-center justify-center md:h-[80vh] md:px-20 lg:h-screen max-h-[900px] lg:items-start">
       <Wrapper className="text-center lg:text-start">
         <Div relative>
           <h1 className="font-signature text-myGold text-86 lg:text-[128px]">
