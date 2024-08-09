@@ -3,17 +3,19 @@ import Wrapper from "../Wrapper";
 import Div from "../Div";
 
 import paint from "../../../public/images/logo/Zamrood-white.svg";
+import back from "../../../public/images/header-image.svg";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Banner = () => {
   return (
-    <Wrapper className="w-full">
+    <Wrapper className="w-full relative">
       <Div
         full
         column
         center
-        className="my-16 bg-gradient-to-r from-orange-400 to-red-400 py-10 gap-4 lg:flex-row lg:justify-between lg:px-10 object-cover object-center"
+        relative
+        className="my-16 py-10 gap-4 lg:flex-row lg:justify-between lg:px-10 object-cover object-center"
       >
         <Div>
           <Image
@@ -48,6 +50,15 @@ const Banner = () => {
               className="text-xl"
             />
           </Div>
+        </Div>
+
+        <Div full Hfull absolute className="inset-0 -z-10">
+          <Image
+            src={back}
+            fill
+            alt="image"
+            className="object-cover object-center"
+          />
         </Div>
       </Div>
     </Wrapper>

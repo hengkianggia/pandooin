@@ -39,7 +39,7 @@ const Destinations = () => {
             full
             flex
             itemsCenter
-            className="overflow-x-scroll gap-3 mt-10 scrollbar-none lg:gap-8"
+            className="overflow-x-scroll gap-3 mt-10 scrollbar-none lg:gap-5"
           >
             <SmallDestinationItem />
             <SmallDestinationItem />

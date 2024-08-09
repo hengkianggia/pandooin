@@ -2,10 +2,13 @@ import React from "react";
 import Div from "../Div";
 import Wrapper from "../Wrapper";
 import Button from "../Button";
+import Image from "next/image";
+
+import background from "../../../public/images/header-image.svg";
 
 const Header = () => {
   return (
-    <header className="w-full relative h-screen bg-gray-800 object-cover object-center px-2 flex flex-col items-center justify-center md:h-[80vh] md:px-20 lg:h-screen max-h-[900px] lg:items-start">
+    <header className="w-full relative h-screen object-cover object-center px-2 flex flex-col items-center justify-center md:h-[80vh] md:px-20 lg:h-screen max-h-[900px] lg:items-start">
       <Wrapper className="text-center lg:text-start">
         <Div relative>
           <h1 className="font-signature text-myGold text-86 lg:text-[128px]">
@@ -26,6 +29,15 @@ const Header = () => {
           />
         </Div>
       </Wrapper>
+
+      <Div absolute full Hfull className="inset-0 -z-10">
+        <Image
+          src={background}
+          fill
+          className="object-cover object-center"
+          alt="image"
+        />
+      </Div>
     </header>
   );
 };

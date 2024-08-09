@@ -30,7 +30,7 @@ const LuxuryFootages = () => {
           </Div>
 
           <Div column full className="max-md:hidden gap-8">
-            <Div full grid className="gap-4 grid-cols-3 lg:gap-8">
+            <Div full grid className="gap-4 grid-cols-3 lg:gap-5">
               <AspectRatio ratio={16 / 11}>
                 <Image
                   src={dummy}
@@ -61,7 +61,7 @@ const LuxuryFootages = () => {
               <Separator color="white" className="mb-0 lg:mb-0" />
             </Div>
 
-            <Div full grid className="gap-4 grid-cols-3 lg:gap-8">
+            <Div full grid className="gap-4 grid-cols-3 lg:gap-5">
               <AspectRatio ratio={16 / 11}>
                 <Image
                   src={dummy}
