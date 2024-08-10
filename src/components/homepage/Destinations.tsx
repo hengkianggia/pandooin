@@ -4,22 +4,12 @@ import Div from "../Div";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import DestinationItem from "./DestinationItem";
 import SmallDestinationItem from "./SmallDestinationItem";
-
-const getData = async () => {
-  const response = await fetch(
-    "https://pandooin.com/api/zamrood/itinerary?highlight=true#",
-    {
-      method: "GET",
-    }
-  );
-  const data = await response.json();
-  return data;
-};
+import { getDatas } from "@/lib/HTTPConnect";
 
 const Destinations = async () => {
   let data = null;
   try {
-    data = await getData();
+    data = await getDatas();
   } catch (error) {
     console.log(error);
   }

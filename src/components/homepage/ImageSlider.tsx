@@ -8,8 +8,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { ItineraryGallery } from "@/lib/type";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-const ImageSlider = ({ data }: { data: ItineraryGallery[] }) => {
+const ImageSlider = ({
+  data,
+  square,
+}: {
+  data: ItineraryGallery[];
+  square?: boolean;
+}) => {
   return (
     <div className="w-full">
       <Swiper
@@ -30,7 +37,10 @@ const ImageSlider = ({ data }: { data: ItineraryGallery[] }) => {
                 width={400}
                 height={400}
                 alt={photo.gallery_alt_text}
-                className="object-cover object-center w-full h-full aspect-video rounded-sm md:h-64 lg:h-96"
+                className={cn(
+                  "object-cover object-center w-full h-full aspect-video rounded-sm md:h-64 lg:h-96",
+                  square && "aspect-square"
+                )}
               />
             </div>
           </SwiperSlide>
