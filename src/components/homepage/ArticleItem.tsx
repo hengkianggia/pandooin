@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import paint from "../../../public/images/header-image.svg";
 import { AspectRatio } from "../ui/aspect-ratio";
-import { cn, generateRandomNumber, rgbDataURL } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 interface ArticleItemProps {
   className?: string;
   noRatio?: boolean;
@@ -33,11 +33,6 @@ const ArticleItem = ({
           src={image}
           width={500}
           height={400}
-          blurDataURL={rgbDataURL(
-            generateRandomNumber(),
-            generateRandomNumber(),
-            generateRandomNumber()
-          )}
           alt={imageDescription}
           className="w-full h-full aspect-square object-cover object-center grayscale transition-all hover:grayscale-0"
         />
@@ -46,11 +41,6 @@ const ArticleItem = ({
           src={image}
           width={500}
           height={400}
-          blurDataURL={rgbDataURL(
-            generateRandomNumber(),
-            generateRandomNumber(),
-            generateRandomNumber()
-          )}
           alt={imageDescription}
           className="w-full h-full aspect-square object-cover object-center grayscale transition-all hover:grayscale-0"
         />

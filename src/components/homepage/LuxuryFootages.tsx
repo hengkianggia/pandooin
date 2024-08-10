@@ -7,7 +7,6 @@ import { AspectRatio } from "../ui/aspect-ratio";
 import Separator from "./Separator";
 import { getDatas } from "@/lib/HTTPConnect";
 import ImageSlider from "./ImageSlider";
-import { generateRandomNumber, rgbDataURL } from "@/lib/utils";
 
 const LuxuryFootages = async () => {
   let data = null;
@@ -51,11 +50,6 @@ const LuxuryFootages = async () => {
                               src={item.src}
                               width={400}
                               height={400}
-                              blurDataURL={rgbDataURL(
-                                generateRandomNumber(),
-                                generateRandomNumber(),
-                                generateRandomNumber()
-                              )}
                               alt="gambar"
                               className="w-full h-full object-cover object-center rounded-sm"
                             />
@@ -85,11 +79,6 @@ const LuxuryFootages = async () => {
                               src={item.src}
                               width={400}
                               height={400}
-                              blurDataURL={rgbDataURL(
-                                generateRandomNumber(),
-                                generateRandomNumber(),
-                                generateRandomNumber()
-                              )}
                               alt="gambar"
                               className="w-full h-full object-cover object-center rounded-sm"
                             />
