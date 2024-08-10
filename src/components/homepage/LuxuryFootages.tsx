@@ -5,8 +5,8 @@ import Image from "next/image";
 
 import { AspectRatio } from "../ui/aspect-ratio";
 import Separator from "./Separator";
-import { getDatas } from "@/lib/HTTPConnect";
 import ImageSlider from "./ImageSlider";
+import { getDatas } from "@/lib/Queries";
 
 const LuxuryFootages = async () => {
   let data = null;
@@ -51,7 +51,7 @@ const LuxuryFootages = async () => {
                               width={400}
                               height={400}
                               alt="gambar"
-                              className="w-full h-full object-cover object-center rounded-sm"
+                              className="w-full h-full object-cover object-center rounded-sm cursor-pointer"
                             />
                           </AspectRatio>
                         );
@@ -80,7 +80,7 @@ const LuxuryFootages = async () => {
                               width={400}
                               height={400}
                               alt="gambar"
-                              className="w-full h-full object-cover object-center rounded-sm"
+                              className="w-full h-full object-cover object-center rounded-sm cursor-pointer"
                             />
                           </AspectRatio>
                         );

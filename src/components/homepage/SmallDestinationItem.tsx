@@ -17,7 +17,7 @@ const SmallDestinationItem = ({
   itinerary_variant_pub_price: string;
 }) => {
   return (
-    <Div className="min-w-60 space-y-4 pb-6 lg:w-[24%]">
+    <Div pointer className="min-w-60 space-y-4 pb-6 lg:w-[24%]">
       <Div full className="overflow-hidden">
         <Image
           src={image}

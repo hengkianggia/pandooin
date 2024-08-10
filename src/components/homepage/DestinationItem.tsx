@@ -25,7 +25,7 @@ const DestinationItem = ({
   itinerary_variant_pub_price,
 }: DestinationItemProps) => {
   return (
-    <Div full column className="gap-3 md:flex-row md:items-center lg:gap-8">
+    <Div full column pointer className="gap-3 md:flex-row md:items-center lg:gap-8">
       <Div
         full
         className={cn(

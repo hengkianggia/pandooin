@@ -2,30 +2,7 @@ import React from "react";
 import Wrapper from "../Wrapper";
 import Div from "../Div";
 import ArticleItem from "./ArticleItem";
-import { getArticle } from "@/lib/HTTPConnect";
-
-const listArticle = [
-  {
-    title: "7 Best Places to Dive in Indonesia: From Bali to Wakatobi",
-    image: "/images/header-image.svg",
-  },
-  {
-    title: "7 Best Places to Dive in Indonesia: From Bali to Wakatobi",
-    image: "/images/header-image.svg",
-  },
-  {
-    title: "7 Best Places to Dive in Indonesia: From Bali to Wakatobi",
-    image: "/images/header-image.svg",
-  },
-  {
-    title: "7 Best Places to Dive in Indonesia: From Bali to Wakatobi",
-    image: "/images/header-image.svg",
-  },
-  {
-    title: "7 Best Places to Dive in Indonesia: From Bali to Wakatobi",
-    image: "/images/header-image.svg",
-  },
-];
+import { getArticle } from "@/lib/Queries";
 
 const Articles = async () => {
   let data = null;

@@ -90,7 +90,7 @@ const BeyondPremium = () => {
             </p>
             <Button
               text={"Customize your trip"}
-              className="bg-myDarkGreen text-white font-semibold md:w-56 hover:bg-myGold "
+              className="bg-myDarkGreen text-white font-semibold md:w-56 hover:bg-myGold"
             />
           </Div>
         </Div>

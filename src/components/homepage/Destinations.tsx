@@ -4,7 +4,7 @@ import Div from "../Div";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import DestinationItem from "./DestinationItem";
 import SmallDestinationItem from "./SmallDestinationItem";
-import { getDatas } from "@/lib/HTTPConnect";
+import { getDatas } from "@/lib/Queries";
 
 const Destinations = async () => {
   let data = null;
