@@ -47,6 +47,7 @@ const BeyondPremium = () => {
           relative
           itemsCenter
           className="-top-5 gap-4 lg:flex-row lg:gap-0 "
+          id="custom-trip"
         >
           {beyondList.map((item, index) => (
             <Div

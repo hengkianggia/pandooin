@@ -3,12 +3,10 @@ import Wrapper from "../Wrapper";
 import Div from "../Div";
 import Image from "next/image";
 
-import dummy from "../../../public/images/header-image.svg";
 import { AspectRatio } from "../ui/aspect-ratio";
 import Separator from "./Separator";
 import { getDatas } from "@/lib/HTTPConnect";
 import ImageSlider from "./ImageSlider";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const LuxuryFootages = async () => {
   let data = null;
@@ -37,9 +35,14 @@ const LuxuryFootages = async () => {
           <Div column full className="max-md:hidden gap-8">
             {data.data.map((item: any, idx: any) => {
               return (
-                <>
+                <div key={idx}>
                   {idx == 0 && (
-                    <Div full grid className="gap-4 grid-cols-3 lg:gap-5">
+                    <Div
+                      full
+                      grid
+                      className="gap-4 grid-cols-3 lg:gap-5"
+                      key={item.itinerary_id}
+                    >
                       {item.related_galleries.slice(0, 3).map((item: any) => {
                         return (
                           <AspectRatio ratio={1 / 1} key={item.gallery_id}>
@@ -57,13 +60,18 @@ const LuxuryFootages = async () => {
                   )}
 
                   {idx == 1 && (
-                    <Div full>
+                    <Div full key={item.itinerary_id}>
                       <Separator color="white" className="mb-0 lg:mb-0" />
                     </Div>
                   )}
 
                   {idx == 2 && (
-                    <Div full grid className="gap-4 grid-cols-3 lg:gap-5">
+                    <Div
+                      full
+                      grid
+                      className="gap-4 grid-cols-3 lg:gap-5"
+                      key={item.itinerary_id}
+                    >
                       {item.related_galleries.slice(0, 3).map((item: any) => {
                         return (
                           <AspectRatio ratio={1 / 1} key={item.gallery_id}>
@@ -79,7 +87,7 @@ const LuxuryFootages = async () => {
                       })}
                     </Div>
                   )}
-                </>
+                </div>
               );
             })}
           </Div>

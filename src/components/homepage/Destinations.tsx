@@ -15,7 +15,7 @@ const Destinations = async () => {
   }
 
   return (
-    <section className="w-full px-4 md:px-8 lg:px-0">
+    <section className="w-full px-4 md:px-8 lg:px-0" id="destination">
       <Wrapper className="w-full flex flex-col gap-6">
         <Div className="space-y-2 lg:flex lg:items-center lg:gap-3">
           <h1 className="text-24 font-bold font-unbounded text-myDarkGreen lg:text-36">

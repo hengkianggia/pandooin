@@ -65,21 +65,35 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent>
               <Div full column Hfull className="py-5 mt-16 items-end gap-5">
-                <a className="text-myGreen text-20" href="/">
-                  Homepage
-                </a>
-                <a className="text-myGreen text-20" href="/">
-                  Customize your trip
-                </a>
-                <a className="text-myGreen text-20" href="/">
-                  Destination
-                </a>
-                <a className="text-myGreen text-20" href="/">
-                  Article
-                </a>
+                <SheetClose>
+                  <a className="text-myGreen text-20" href="/">
+                    Homepage
+                  </a>
+                </SheetClose>
+                <SheetClose>
+                  <a className="text-myGreen text-20" href="#custom-trip">
+                    Customize your trip
+                  </a>
+                </SheetClose>
+                <SheetClose>
+                  <a className="text-myGreen text-20" href="#destination">
+                    Destination
+                  </a>
+                </SheetClose>
+                <SheetClose>
+                  <a className="text-myGreen text-20" href="#article">
+                    Article
+                  </a>
+                </SheetClose>
                 <Button
                   text={"Need assistance?"}
                   className="text-myDarkGreen border-myDarkGreen w-fit py-2 mx-0 hover:text-myWhite hover:bg-myDarkGreen"
+                  onClick={() => {
+                    window.open(
+                      "https://wa.me/6283831556160?text=hii i want to talk with you",
+                      "_blank"
+                    );
+                  }}
                 />
               </Div>
             </SheetContent>
@@ -106,7 +120,7 @@ const Navbar = () => {
           </Div>
           <Div>
             <Link
-              href={"/"}
+              href={"#custom-trip"}
               className={cn(
                 "font-semibold",
                 isScrolled ? "text-myWhite" : "text-myGreen"
@@ -117,7 +131,7 @@ const Navbar = () => {
           </Div>
           <Div>
             <Link
-              href={"/"}
+              href={"#destination"}
               className={cn(
                 "font-semibold",
                 isScrolled ? "text-myWhite" : "text-myGreen"
@@ -128,7 +142,7 @@ const Navbar = () => {
           </Div>
           <Div>
             <Link
-              href={"/"}
+              href={"#article"}
               className={cn(
                 "font-semibold",
                 isScrolled ? "text-myWhite" : "text-myGreen"
@@ -146,6 +160,12 @@ const Navbar = () => {
                   ? "text-myWhite border-myWhite hover:bg-myWhite hover:text-myGreen"
                   : ""
               )}
+              onClick={() => {
+                window.open(
+                  "https://wa.me/6283831556160?text=hii i want to talk with you",
+                  "_blank"
+                );
+              }}
             />
           </Div>
         </Div>

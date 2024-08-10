@@ -38,7 +38,7 @@ const Articles = async () => {
   const article = data.data;
 
   return (
-    <section className="w-full px-4 my-10 md:px-8 lg:px-0">
+    <section className="w-full px-4 my-10 md:px-8 lg:px-0" id="article">
       <Wrapper className="w-full space-y-4">
         <Div full className="text-myGreen">
           <h1 className="font-unbounded text-22 font-semibold lg:text-36">
