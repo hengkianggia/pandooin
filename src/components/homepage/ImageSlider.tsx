@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { ItineraryGallery } from "@/lib/type";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, generateRandomNumber, rgbDataURL } from "@/lib/utils";
 
 const ImageSlider = ({
   data,
@@ -36,6 +36,11 @@ const ImageSlider = ({
                 src={photo.src}
                 width={400}
                 height={400}
+                blurDataURL={rgbDataURL(
+                  generateRandomNumber(),
+                  generateRandomNumber(),
+                  generateRandomNumber()
+                )}
                 alt={photo.gallery_alt_text}
                 className={cn(
                   "object-cover object-center w-full h-full aspect-video rounded-sm md:h-64 lg:h-96",

@@ -3,7 +3,7 @@ import Div from "../Div";
 import Image from "next/image";
 
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { formatRupiah } from "@/lib/utils";
+import { formatRupiah, generateRandomNumber, rgbDataURL } from "@/lib/utils";
 
 const SmallDestinationItem = ({
   itinerary_name,
@@ -23,6 +23,11 @@ const SmallDestinationItem = ({
           src={image}
           width={400}
           height={400}
+          blurDataURL={rgbDataURL(
+            generateRandomNumber(),
+            generateRandomNumber(),
+            generateRandomNumber()
+          )}
           alt="image"
           className="w-full aspect-square object-cover object-center"
         />

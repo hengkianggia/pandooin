@@ -5,6 +5,8 @@ import Destinations from "@/components/homepage/Destinations";
 import Header from "@/components/homepage/Header";
 import LuxuryFootages from "@/components/homepage/LuxuryFootages";
 import Separator from "@/components/homepage/Separator";
+import { Skleton } from "@/components/MySkleton";
+import Wrapper from "@/components/Wrapper";
 
 export default function Home() {
   return (
@@ -16,6 +18,9 @@ export default function Home() {
       <LuxuryFootages />
       <Banner />
       <Articles />
+      {/* <Wrapper className="w-full bg-orange-400">
+        <Skleton />
+      </Wrapper> */}
     </>
   );
 }
